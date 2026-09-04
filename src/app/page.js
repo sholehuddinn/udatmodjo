@@ -146,6 +146,13 @@ function Hero() {
     <section className="relative isolate overflow-hidden">
       {/* Background layers */}
       <div aria-hidden className="absolute inset-0 -z-10">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/main.jpg"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-background/60" />
         <div className="hero-aurora" />
         <div className="absolute inset-0 bg-dot-grid opacity-20 mask-[radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent_70%)]" />
         <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-background to-transparent" />
@@ -158,12 +165,7 @@ function Hero() {
           style={{ animationDelay: "0ms", animationFillMode: "both" }}
           className={rise}
         >
-          <span className="glass-panel glass-panel-lit inline-flex items-center gap-2.5 rounded-full py-1 ps-1.5 pe-4 text-sm">
-            <span className="state-dot" />
-            <span className="text-muted-foreground">
-              Supplier Terpercaya Sejak 1990
-            </span>
-          </span>
+          
         </div>
 
         {/* Heading */}
